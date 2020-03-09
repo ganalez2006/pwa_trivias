@@ -1,0 +1,26 @@
+{
+	"name": "CZN Trivias",
+	"short_name": "CZN Trivias",
+	"icons": [
+		{
+			"src": "images/icons/launcher-icon-1x.png",
+			"type": "image/png",
+			"sizes": "48x48"
+		},
+		{
+			"src": "images/icons/launcher-icon-2x.png",
+			"type": "image/png",
+			"sizes": "96x96"
+		},
+		{
+			"src": "images/icons/launcher-icon-4x.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"start_url": "./?launcher=true",
+	"background_color": "#fec832", 
+	"theme_color": "#dcdcdc", 
+	"orientation": "portrait", 
+	"display": "standalone"
+}
