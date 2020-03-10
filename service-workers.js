@@ -1,9 +1,10 @@
-var CACHEVERSION = "v1";
+var CACHEVERSION = "v1.1";
 var CACHESEPARATOR = "-";
 var CACHENAME = "cachestore" + CACHESEPARATOR + CACHEVERSION;
 var FILES = [
 	"./"
 	, "./index.html"
+	, "./offline.html"
 	, "./js/scripts.js"
 	, "./data/questions.json"
 ];
