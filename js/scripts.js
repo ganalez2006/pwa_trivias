@@ -71,8 +71,10 @@ getQuestions().then(function(questions) {
 			var _difficulty = e.toElement.innerText;
 
 			// set difficulty
-			var ds = document.getElementsByClassName('difficulty-selected')[0];
-			ds.innerHTML = _difficulty;
+			var ds = document.getElementsByClassName('difficulty-selected');
+			for (let item of ds) {
+				item.innerHTML = _difficulty;
+			}
 
 			bt_difficulty = 'd_' + _difficulty;
 			var categories = Object.keys(questions[bt_difficulty]);
@@ -98,6 +100,12 @@ getQuestions().then(function(questions) {
 		if(e.target && e.toElement.className == 'bt-cat') {
 			//console.debug(e.target);
 			bt_category = e.toElement.innerText;
+
+			// set category
+			var ds = document.getElementsByClassName('category-selected');
+			for (let item of ds) {
+				item.innerHTML = bt_category;
+			}
 			
 			// list questions by category
 			var list_questions = questions[bt_difficulty][bt_category];
