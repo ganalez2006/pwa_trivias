@@ -221,7 +221,7 @@ getQuestions().then(function(questions) {
 			} else {
 
 				// remove empty category
-				console.debug('No hay mas preguntas');
+				//console.debug('No hay mas preguntas');
 				current_category.parentNode.removeChild(current_category);
 				wrap_trivia.classList.add('hide');
 			}

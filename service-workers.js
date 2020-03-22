@@ -1,4 +1,4 @@
-var CACHEVERSION = "v1.1";
+var CACHEVERSION = "v1.2";
 var CACHESEPARATOR = "-";
 var CACHENAME = "cachestore" + CACHESEPARATOR + CACHEVERSION;
 var FILES = [
