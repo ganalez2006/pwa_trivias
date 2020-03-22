@@ -52,8 +52,7 @@ getQuestions().then(function(questions) {
 		var min = 1;
 		var max = list_questions.length;
 		var item = Math.floor(Math.random()*(max));
-		const question = {};
-		const _r = Object.assign(question, list_questions[item]);
+		const question = Object.assign({}, list_questions[item]);
 
 		// show question
 		if (typeof question !== 'undefined') {
@@ -111,12 +110,7 @@ getQuestions().then(function(questions) {
 				elemnt_options.appendChild(li_opt);
 			});
 
-
-			// delete question
-			//delete questions[bt_difficulty][bt_category][item];
-			//questions[bt_difficulty][bt_category] = questions[bt_difficulty][bt_category].filter(Boolean);
-
-			//
+			// show container question
 			wrap_trivia.classList.remove('hide');
 		}
 	}
@@ -222,7 +216,15 @@ getQuestions().then(function(questions) {
 
 				// remove empty category
 				//console.debug('No hay mas preguntas');
+
+				// remove category in list categories
 				current_category.parentNode.removeChild(current_category);
+
+				// remove category in objet categories
+				delete questions[bt_difficulty][bt_category];
+				console.debug(questions[bt_difficulty]);
+
+				// hide container question
 				wrap_trivia.classList.add('hide');
 			}
 		}

@@ -1,4 +1,4 @@
-var CACHEVERSION = "v1.2";
+var CACHEVERSION = "v2";
 var CACHESEPARATOR = "-";
 var CACHENAME = "cachestore" + CACHESEPARATOR + CACHEVERSION;
 var FILES = [
@@ -7,6 +7,7 @@ var FILES = [
 	, "./offline.html"
 	, "./js/scripts.js"
 	, "./data/questions.json"
+	, "./style/style.css"
 ];
 
 self.addEventListener("install", function(event) {
