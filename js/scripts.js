@@ -222,7 +222,6 @@ getQuestions().then(function(questions) {
 
 				// remove category in objet categories
 				delete questions[bt_difficulty][bt_category];
-				console.debug(questions[bt_difficulty]);
 
 				// hide container question
 				wrap_trivia.classList.add('hide');
